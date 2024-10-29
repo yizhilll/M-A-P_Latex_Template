@@ -1,0 +1,51 @@
+\documentclass[11pt, a4paper, logo, copyright, nonumbering]{map}
+
+\input{resources/packages}
+\input{resources/math_macro}
+
+
+ 
+\bibliographystyle{abbrvnat}
+
+\renewcommand{\today}{}
+\newcommandx{\info}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+
+\title{\centering OpenO1: A Technical Report for Advanced Test-time Scaling Reasoning}
+
+\author{
+OpenO1 Team, M-A-P$^1$
+}
+
+
+\input{sections/abstract}
+
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+\maketitle
+
+
+\newpage
+
+\tableofcontents
+
+
+\newpage
+
+
+\input{sections/limitations_and_future_work}
+
+
+\newpage
+
+\bibliography{main.bib}
+
+\newpage
+% \appendix
+% \input{sections/appendix}
+
+
+\end{CJK*}
+\end{document} 
+
