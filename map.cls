@@ -56,6 +56,7 @@
 \RequirePackage{mdframed}
 \RequirePackage{caption}
 \RequirePackage{needspace}
+\RequirePackage{lipsum}
 
 %%======== Can use any of these fonts ======== 
 %\RequirePackage{charter}
@@ -141,8 +142,11 @@ a4paper]{geometry}%
 \fancypagestyle{firststyle}{
     \fancyhead[L]{
         \ifthenelse{\boolean{logo}}{
-            \includegraphics[width=10pt]{logo/map-logo-c.pdf}
-             \raisebox{2pt}{\texttt{m-a-p.ai}}
+            \includegraphics[width=15pt]{logo/map-logo-c.pdf}
+            \hspace{2pt}
+                        \includegraphics[width=50pt]{logo/map_logo_v2.pdf}
+                        % \vspace{-1mm}
+             % \raisebox{8pt}{\texttt{M-A-P}}
         }{}
         % Other content for the right side of the header
         \ifdefined\paperurl

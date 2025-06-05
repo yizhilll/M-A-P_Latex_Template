@@ -1,14 +1,34 @@
 \documentclass[11pt, a4paper, logo, copyright, nonumbering]{map}
 
+\newcommand{\cm}[1]{\textcolor{blue}{[cm: #1]}}
+
+\usepackage{pifont}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{geometry}
+\usepackage{multirow}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor} % 如果需要颜色
+\geometry{a4paper, margin=1in} % Adjust the page margin
+\usepackage[justification=justified]{caption}
+\usepackage{subcaption} % 需要在导言区引入
+\usepackage{multicol}
+
+
+\definecolor{cvprblue}{rgb}{0.21,0.49,0.74}
+
+
 \input{resources/packages}
+
+
 \input{resources/math_macro}
+
 
 \hypersetup{
     colorlinks=true,            %链接颜色
     linkcolor=blue,             %内部链接
     filecolor=magenta,          %本地文档
     urlcolor=cyan,              %网址链接
-    citecolor=purple,             % 引用颜色
+    citecolor=cvprblue,             % 引用颜色
     pdftitle={Overleaf Example},
     pdfpagemode=FullScreen,
     }
@@ -18,12 +38,12 @@
 \renewcommand{\today}{}
 \newcommandx{\info}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
 
-\title{\centering OpenO1: A Technical Report for Advanced Test-time Scaling Reasoning}
+\title{\centering A Latex Template for M-A-P Publications}
 
 \author{
-OpenO1 Team, M-A-P$^1$
+\textbf{M-A-P} \\
+Other Authors
 }
-
 
 \input{sections/abstract}
 
@@ -41,6 +61,11 @@ OpenO1 Team, M-A-P$^1$
 
 \newpage
 
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/experiment}
+\input{sections/results}
+\input{sections/conclusion}
 
 \input{sections/limitations_and_future_work}
 
